@@ -1,0 +1,3 @@
+steps:
+  - command: echo "Checks out multiple git repositories"
+    command: "git clone -b go-code https://github.com/equinixmetal-buildkite/dynamic-buildkite-template.git && cd dynamic-buildkite-template && go run main.go | buildkite-agent pipeline upload"
