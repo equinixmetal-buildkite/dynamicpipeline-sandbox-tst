@@ -1,0 +1,5 @@
+steps:
+  - plugins:
+      - docker#v5.6.0:
+          image: "pull ghcr.io/equinixmetal-buildkite/dynamic-buildkite-template:latest"
+          
