@@ -1,7 +1,3 @@
 steps:
-  - command: echo "Checks out multiple git repositories"
-    command: "wget https://github.com/equinixmetal-buildkite/dynamic-buildkite-template/releases/download/v1.0.0/dynamic-buildkite-template-v1.0.0-linux-amd64.tar.gz && tar -xzvf dynamic-buildkite-template-v1.0.0-linux-amd64.tar.gz && ./dynamic-buildkite-template | buildkite-agent pipeline upload"
-  - plugins:
-      - docker#v5.6.0:
-          image: "pull ghcr.io/equinixmetal-buildkite/dynamic-buildkite-template:latest" 
-    
+  - label: create-pipeline
+    command: "docker run -it ghcr.io/equinixmetal-buildkite/dynamic-buildkite-template:latest | buildkite-agent pipeline upload"
