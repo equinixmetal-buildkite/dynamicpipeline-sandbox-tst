@@ -1,4 +1,0 @@
-steps:
-  - label: create-pipeline
-    command: "docker login registry.example.com -u hnadiminti-equinix -p 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 && docker run"
-    command: "docker run -it ghcr.io/equinixmetal-buildkite/dynamic-buildkite-template:latest | buildkite-agent pipeline upload"
