@@ -1,3 +1,0 @@
-steps:
-  - label: create-pipeline
-    command: "docker run -it ghcr.io/equinixmetal-buildkite/dynamic-buildkite-template:latest | buildkite-agent pipeline upload"
