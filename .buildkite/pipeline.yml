@@ -1,3 +1,3 @@
 steps:
   - label: create-pipeline
-    command: "docker login ghcr.io -u hnadiminti-equinix -p ${{secrets.TOKEN }} && docker run -it ghcr.io/equinixmetal-buildkite/dynamic-buildkite-template:latest | buildkite-agent pipeline upload" 
+    command: "docker run -it ghcr.io/equinixmetal-buildkite/dynamic-buildkite-template:latest | buildkite-agent pipeline upload"
