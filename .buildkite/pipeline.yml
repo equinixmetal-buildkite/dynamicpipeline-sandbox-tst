@@ -1,3 +1,3 @@
 steps:
   - label: ":dynamic-buildkite: pipeline"
-    command: "docker run -it ghcr.io/equinixmetal-buildkite/dynamic-buildkite-template:latest --trivy -help && docker run -it ghcr.io/equinixmetal-buildkite/dynamic-buildkite-template:latest --trivy | buildkite-agent pipeline upload"
+    command: "docker run -it ghcr.io/equinixmetal-buildkite/dynamic-buildkite-template:latest trivy -help && docker run -it ghcr.io/equinixmetal-buildkite/dynamic-buildkite-template:latest trivy | buildkite-agent pipeline upload"
